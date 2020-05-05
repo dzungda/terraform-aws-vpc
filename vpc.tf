@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "vpc" {
-  source = "../../modules/terraform-aws-vpc"
+  source = "https://github.com/dzungda/terraform-aws-module/tree/master/terraform-aws-vpc"
 
   name = var.name
 

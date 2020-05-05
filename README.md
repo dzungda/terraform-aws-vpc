@@ -6,7 +6,7 @@
 Terraform 0.12. Pin module version to `~> v2.0`.
 
 
-## Usage
+## Example
 
 ```hcl
 module "vpc" {
