@@ -47,7 +47,7 @@ Athena, Rekognition, Elastic File System (EFS), Cloud Directory
 
 ```hcl
 module "vpc" {
-  source = "git@git.vti.com.vn:vticloud/vti_cloud_iac.git//modules/terraform-aws-vpc"
+  source = "https://github.com/dzungda/terraform-aws-module/tree/master/terraform-aws-vpc"
 
   name = "my-vpc"
   cidr = "10.0.0.0/16"
@@ -86,7 +86,7 @@ resource "aws_eip" "nat" {
 Then, pass the allocated IPs as a parameter to this module.
 ```hcl
 module "vpc" {
-  source = "git@git.vti.com.vn:vticloud/vti_cloud_iac.git//modules/terraform-aws-vpc"
+  source = "https://github.com/dzungda/terraform-aws-module/tree/master/terraform-aws-vpc"
 
   # The rest of arguments are omitted for brevity
 
@@ -157,7 +157,7 @@ Sometimes you need to have a way to create VPC resources conditionally but Terra
 ```hcl
 # This VPC will not be created
 module "vpc" {
-  source = "git@git.vti.com.vn:vticloud/vti_cloud_iac.git//modules/terraform-aws-vpc"
+  source = "https://github.com/dzungda/terraform-aws-module/tree/master/terraform-aws-vpc"
 
   create_vpc = false
   # ... omitted
