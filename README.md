@@ -1,4 +1,4 @@
-##VPC child module 
+## VPC child module 
 ### Requirements
 
 | Name | Version |
